@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap');
+
+
+:root {
+    --cor-primaria: #0118D8;
+    --cor-secundaria: #EEEEEE;
+    --cor-terciaria: #FFF8F8;
+    --cor-hover: #60B5FF;
+
+    --fonte-principal: 'Maven Pro', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.body,html {
+    background-color: var(--cor-secundaria);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container_box {
+    font-family: var(--fonte-principal);
+    align-items: center;
+    height: 550px;
+    width: 550px;
+    background: -webkit-linear-gradient(bottom, #000957, #344CB7);
+    background: -o-linear-gradient(bottom, #000957, #344CB7);
+    background: -moz-linear-gradient(bottom, #000957#344CB7);
+    background: linear-gradient(bottom, #000957#344CB7);
+    border-radius: 10px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.container_box_avatar {
+    display: flex;
+    border-radius: 50%;
+    width: 25%;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+.container_box_titulo {
+    font-family: var(--fonte-principal);
+    font-size: 30px;
+    color: var(--cor-terciaria);
+    text-align: center;
+}
+.container_inputBox {
+    margin: 20px auto;
+    position: relative;
+    width: 450px;
+}
+.container_inputBox input {
+    position: relative;
+    padding: 8px 10px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #040305;
+    font-weight: 400;
+    font-size: 1.25rem;
+    letter-spacing: .05rem;
+    z-index: 1;
+}
+
+.container_inputBox input:valid ~ p,
+.container_inputBox input:focus ~ p {
+    font-size: .85rem;
+    transform: translateY(-32px);
+}
+
+.container_inputBox p{
+    position: absolute;
+    left: 0;
+    padding: 10px 0;
+    color: var(--cor-terciaria);
+    font-family: var(--fonte-principal);
+    font-size: 1rem;
+    transition: .3s;
+    pointer-events:none;
+}
+.container_inputBox i {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: var(--cor-terciaria);
+    width: 100%;
+    transition: .3s;
+    height: 3px;
+}
+
+.container_inputBox input:valid ~ i,
+.container_inputBox input:focus ~ i{
+    height: 100%;
+}
+
+
+.container_box_checkbox{
+    display: flex;
+    margin: 20px 50px;
+    gap: 10px;
+}
+
+.container_box_checkbox_label{
+    display: flex;
+    flex-direction: row;
+    font-family: var(--fonte-principal);
+    font-size: 18px;
+    color: var(--cor-terciaria);
+}
+.container_box_botao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    padding: 12px;
+    margin: 50px auto;
+    border: none;
+    border-radius: 25px;
+    font-family: var(--fonte-principal);
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.container_box_botao:hover{
+    background-color: var(--cor-hover);
+    color: var(--cor-terciaria);
+    cursor: pointer;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
