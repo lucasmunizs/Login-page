@@ -49,7 +49,7 @@
 
 .container_box_titulo {
     font-family: var(--fonte-principal);
-    font-size: 30px;
+    font-size: 1.875rem;
     color: var(--cor-terciaria);
     text-align: center;
 }
@@ -114,7 +114,7 @@
     display: flex;
     flex-direction: row;
     font-family: var(--fonte-principal);
-    font-size: 18px;
+    font-size: 1.125rem;
     color: var(--cor-terciaria);
 }
 .container_box_botao{
@@ -128,7 +128,7 @@
     border-radius: 25px;
     font-family: var(--fonte-principal);
     font-weight: 700;
-    font-size: 18px;
+    font-size: 1,125rem;
 }
 
 .container_box_botao:hover{
